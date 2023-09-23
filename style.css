@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  /* color variables */
+  --darkBgandText: #000;
+  --lightText: #fff;
+  --primaryBg: #cdcdcd;
+  --secondaryBg: #d9d9d9;
+
+  /* font variables */
+  --PageHeaderFont: 30px;
+  --hederFont: 24px;
+  --listFont: 20px;
+}
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  background-color: var(--primaryBg);
+}
+
+header {
+  /* width: 100%; */
+  height: fit-content;
+  padding: 10px 40px;
+  box-sizing: border-box;
+  background-color: var(--darkBgandText);
+  color: var(--lightText);
+}
+header > div {
+  font-size: var(--PageHeaderFont);
+  font-weight: 500;
+}
+header > div:hover {
+  transition: all 1s ease;
+  transform: scale(1.01);
+  font-weight: 600;
+}
+
+main {
+  /* width: 100%;
+    height: 100%; */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: inherit;
+  align-items: start;
+  justify-content: center;
+}
+
+#searchContainer {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+#searchContainer > input {
+  background-color: var(--secondaryBg);
+  font-size: var(--listFont);
+  width: 100%;
+  padding: 10px 25px;
+  padding-bottom: 5px;
+}
+#searchContainer > input:active {
+  background-color: var(--secondaryBg) !important;
+}
+#searchContainer > input::placeholder {
+  color: var(--darkBgandText);
+  font-size: var(--listFont);
+}
+
+#searchBtn,
+.sortBtns {
+  background-color: var(--darkBgandText);
+  color: var(--lightText);
+  font-size: var(--hederFont);
+  height: 45px;
+  width: 200px;
+}
+.sortBtns {
+  padding-inline: 32px;
+  width: auto;
+}
+#listOfBtns {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+table {
+  position: relative;
+  background-color: var(--secondaryBg);
+  color: var(--darkBgandText);
+  margin: auto;
+  width: 98%;
+  border-collapse: collapse;
+  font-weight: 400;
+  /* border: 1px solid black; */
+}
+table,
+td {
+  border: 1px solid black;
+}
+thead {
+  background-color: var(--secondaryBg);
+  color: var(--darkBgandText);
+  position: sticky;
+  top: 0px;
+  font-size: var(--hederFont);
+  font-weight: 500;
+}
+thead td{
+  padding: 15px 25px;
+}
+td {
+  font-size: var(--listFont);
+  padding: 7px 25px;
+}
+
+.nameTd > span {
+  margin-bottom: 10px;
+}
+.nameTd > img {
+  width: 38px;
+  height: 38px;
+  margin-right: 15px;
+}
+
+.tBody td {
+  font-size: var(--listFont);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./student-favicon.ico" type="image/x-icon">
+    <title>Student Portal</title>
+</head>
+<body>
+    <header>
+        <div>Student Portal</div>
+    </header>
+    <main>
+        <div id="searchContainer">
+            <input type="text" placeholder="Search..." id="searchInput">
+            <button id="searchBtn">Search</button>
+        </div>
+        <div id="listOfBtns">
+            <button id="sort-az" class="sortBtns" onclick="">Sort A->Z</button>
+            <button id="sort-za" class="sortBtns" onclick="">Sort Z->A</button>
+            <button id="sortMarks" class="sortBtns" onclick="">Sort By Marks</button>
+            <button id="sortPassing" class="sortBtns" onclick="">Sort By Passing</button>
+            <button id="sortClass" class="sortBtns" onclick="">Sort By Class</button>
+            <button id="sortGender" class="sortBtns" onclick="">Sort By Gender</button>
+        </div>
+        <table id="mainTable">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Name</td>
+                    <td>Gender</td>
+                    <td>Class</td>
+                    <td>Marks</td>
+                    <td>Pass/Fail</td>
+                    <td>Email</td>
+                    <td>City</td>
+
+                </tr>
+            </thead>
+            <tbody id="tBody"> </tbody>
+        </table>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
